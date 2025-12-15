@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+    <style>
+        .red-square {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .event-button {
+            margin-bottom: 18px;
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            border: none;
+            color: #fff;
+        }
+
+        .event-button:hover {
+            background-color: #0056b3;
+            /* border: 1px solid #000; */
+        }
+    </style>
+</head>
+<body>
+    <div class="red-square"></div>
+    <input placeholder="Type the color" class="color-to-change"></input>
+    <ul>
+        <li class="js-target">Unchanged</li>
+        <li class="js-target">Unchanged</li>
+        <li>Won't change</li>
+        <li class="js-target">Unchanged</li>
+        <li>Wont change</li>
+        <li class="js-target">Unchanged</li>
+    </ul>
+
+    <input placeholder="Type something" class="input-to-copy">
+    <p class="p-to-copy-to">Nothing has changed yet.</p>
+
+    <button class="event-button">Click Me!</button>
+
+    <div class="button-container">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
